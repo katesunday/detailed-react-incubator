@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/detailed-react-incubator/static/css/main.de825a22.css",
+    "main.js": "/detailed-react-incubator/static/js/main.ceddc109.js",
+    "static/js/787.67c4a20b.chunk.js": "/detailed-react-incubator/static/js/787.67c4a20b.chunk.js",
+    "index.html": "/detailed-react-incubator/index.html",
+    "main.de825a22.css.map": "/detailed-react-incubator/static/css/main.de825a22.css.map",
+    "main.ceddc109.js.map": "/detailed-react-incubator/static/js/main.ceddc109.js.map",
+    "787.67c4a20b.chunk.js.map": "/detailed-react-incubator/static/js/787.67c4a20b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de825a22.css",
+    "static/js/main.ceddc109.js"
+  ]
+}
