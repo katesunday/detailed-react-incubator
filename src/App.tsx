@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
+import React , {useState} from 'react';
 import './App.css';
+import Accordion from "./Accordion";
+import Rating from "./Rating";
+import UncontrolledOnOff from "./UncontrolledOnOff";
+import UncontrolledRating from "./UncontrolledRating";
+import OnOff from "./OnOff";
+import UncontrolledAccordion from "./UncontrolledAccordion";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    let [ratingValue , setRatingValue] = useState(0)
+    let [collapsed , setCollapsed] = useState(true)
+    let [on , setOn] = useState(false)
+
+
+    return (
+        <div className="App">
+            <Rating value={ratingValue} onClick={setRatingValue}/>
+            <UncontrolledRating/>
+            <Accordion title={'menu'} collapsed={collapsed} onClick={setCollapsed}/>
+            <UncontrolledAccordion title={'users'}/>
+            {/*<OnOff on={on} onClick={setOn}/>*/}
+            <UncontrolledOnOff onChange={setOn}/> {on.toString()}
+
+        </div>
+    );
 }
+
 
 export default App;
