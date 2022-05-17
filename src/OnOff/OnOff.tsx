@@ -1,4 +1,5 @@
 import React  from 'react';
+import s from './OnOff.module.css'
 
 type OnOffPropsType = {
     on: boolean
@@ -12,9 +13,9 @@ const OnOff = (props: OnOffPropsType) => {
     return (
         <div>
 
-            <div className='onStyle' style={styleConditionOn} onClick={()=>props.onClick(true)}>on</div>
-            <div className='offStyle' style={styleConditionOff} onClick={()=>props.onClick(false)}>off</div>
-            <div className='indicator' style={styleConditionInd}> </div>
+            <div className={s.onStyle} style={styleConditionOn} onClick={()=>props.onClick(true)}>on</div>
+            <div className={s.offStyle} style={styleConditionOff} onClick={()=>props.onClick(false)}>off</div>
+            <div className={s.indicator} style={styleConditionInd}> </div>
         </div>
     );
 };

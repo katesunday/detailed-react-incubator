@@ -1,6 +1,7 @@
 import React , {useState} from 'react';
+import s from './OnOff.module.css'
 
-type OnOffPropsType = {
+export type OnOffPropsType = {
     onChange: (value: boolean) => void
 }
 const UncontrolledOnOff = (props: OnOffPropsType) => {
@@ -19,9 +20,9 @@ const UncontrolledOnOff = (props: OnOffPropsType) => {
 
 return (
     <div>
-        <div className='onStyle' style={styleConditionOn} onClick={onClicked}>on</div>
-        <div className='offStyle' style={styleConditionOff} onClick={offClicked}>off</div>
-        <div className='indicator' style={styleConditionInd}> </div>
+        <div className={s.onStyle} style={styleConditionOn} onClick={onClicked}>on</div>
+        <div className={s.offStyle} style={styleConditionOff} onClick={offClicked}>off</div>
+        <div className={s.indicator} style={styleConditionInd}> </div>
     </div>
 )
 }
