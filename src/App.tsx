@@ -6,6 +6,7 @@ import UncontrolledOnOff from "./UncontrolledOnOff/UncontrolledOnOff";
 import UncontrolledRating from "./UncontrolledRating/UncontrolledRating";
 import OnOff from "./OnOff/OnOff";
 import UncontrolledAccordion from "./UncontrolledAccordion/UncontrolledAccordion";
+import Select from "./Select/Select";
 
 
 function App() {
